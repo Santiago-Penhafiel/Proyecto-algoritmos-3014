@@ -7,8 +7,7 @@ mujeres, y su estatura es mayor de a 1.50 m y su peso es mayor o igual a 130 lb,
 su peso. La dosis debe ser expresada en gramos. La cantidad de vitaminas solo es aplicable a 
 personas mayores de 18 años.
 Además, se solicita el proceso se repita tantas veces como el usuario desee. Es decir, debemos 
-hacer un proceso repetitivo.
-*/
+hacer un proceso repetitivo.*/
 #include <stdio.h>
 #include <conio.h>
 #include <ctype.h>
@@ -74,7 +73,7 @@ int main ()
    }
    for ( i = 0; i < estudiantes; i++){
     if (vita[i]!=0){
-        printf("La dosis de vitaminas para el estudiante %i es de %f gramos\n", i+1, vita[i]);
+        printf("La dosis de vitaminas para el estudiante %i es de %0.2f gramos\n", i+1, vita[i]);
     }else{
         printf("El estudiante %i es menor de edad, la dosis no aplica\n", i+1);
     }    
